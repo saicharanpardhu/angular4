@@ -1,0 +1,24 @@
+<div class="container-fluid" id="article" style="width:100%;">
+<div class="row">
+	
+	<div class="col-sm-12 pull-left"><a  routerLink="/landing"><<Back</a></div>
+</div>
+<ul class=""  style="position:absolute;top:10%;width:80%; left:10%;">
+<li *ngFor="let article of articles" >
+
+<div class="row">
+<div class="col-sm-1 " >
+	<img class="pull-right" src="{{article.urlToImage}}" height="60px">
+</div>
+<div class="col-sm-9" >
+<a href="{{article.url}}" target="_blank">{{article.title}}: </a><br>
+{{article.description}}
+</div>
+<div class="col-sm-2" style="border-left: 2px solid black;">
+<a href="{{article.url}}" target="_blank">save article</a><br><br>
+</div>
+</div>  
+</li>
+
+</ul>
+</div>
